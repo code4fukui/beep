@@ -1,0 +1,67 @@
+<!DOCTYPE html><html lang="ja"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width"><link rel="icon" href="data:">
+<title>beep</title>
+</head><body>
+<h1>beep</h1>
+
+freq: <input id=infreq value=440>Hz<br>
+duration: <input id=induration value=1>sec</br>
+vol: <input id=invol value=50>%<br>
+<button id=btnplay>beep</button>
+<button id=btnstop>stop</button>
+<button id=btnmulti>multi</button>
+
+<script type="module">
+import { beep } from "./beep.js";
+
+btnplay.onclick = () => {
+  const freq = infreq.value;
+  const vol = invol.value / 100;
+  const duration = induration.value;
+
+  beep(freq, duration, vol);
+};
+btnstop.onclick = () => {
+  beep(0);
+};
+btnmulti.onclick = async () => {
+  await beep(440, 0.1);
+  await beep(880, 0.1);
+};
+</script>
+
+<hr>
+<script type="module" src="https://js.sabae.cc/code-js.js"></script>
+<code-html>
+&lt;script type="module"&gt;
+import { beep } from "https://code4fukui.github.io/beep/beep.js";
+
+btnplay.onclick = () =&gt; {
+  const freq = infreq.value;
+  const vol = invol.value / 100;
+  const duration = induration.value;
+
+  beep(freq, duration, vol);
+};
+btnstop.onclick = () =&gt; {
+  beep(0);
+};
+btnmulti.onclick = async () =&gt; {
+  await beep(440, 0.1);
+  await beep(880, 0.1);
+};
+&lt;/script&gt;
+</code-html>
+<hr>
+
+<style>
+input {
+  width: 3em;
+  margin: 0 .2em;
+}
+a {
+  color: gray !important;
+}
+</style>
+
+<hr>
+<a href=https://github.com/code4fukui/beep>src on GitHub</a>
