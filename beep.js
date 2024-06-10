@@ -10,7 +10,7 @@ const createOscillator = (type = "sawtooth") => {
 
 let obj = null;
 
-export const beep = async (freq = 0, duration = 0.5, vol = 0.5) => {
+export const beep = async (freq = 440, duration = 0.5, vol = 0.5) => {
   if (typeof duration == "string") duration = parseFloat(duration);
   if (!obj) {
     const type = "sawtooth";
