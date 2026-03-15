@@ -1,5 +1,7 @@
 # beep
 
+> 日本語のREADMEはこちらです: [README.ja.md](README.ja.md)
+
 A simple beeping sound library for the web.
 
 ## Demo
