@@ -1,6 +1,6 @@
 # beep
 
-beepは、ウェブ上で簡単にビープ音を再生できるJavaScriptライブラリです。Web Audio APIを使用して、周波数、持続時間、音量を指定してビープ音を生成します。
+「beep」は、Web Audio APIを使用してビープ音を生成するJavaScriptライブラリです。周波数、持続時間、音量を指定してビープ音を再生できます。
 
 ## デモ
 https://code4fukui.github.io/beep/

@@ -28,4 +28,4 @@ beep(440, 0.5, 0.5); // Play a beep at 440 Hz, 0.5 seconds duration, and 0.5 vol
 You can also use the provided buttons in the demo to play various beeps.
 
 ## License
-This project is licensed under the MIT License.
+MIT License — see [LICENSE](LICENSE).
